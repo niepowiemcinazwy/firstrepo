@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 13</title>
+</head>
+<body>
+
+    <div style="color:blue;font-size:110px;">
+        <script language="JavaScript">
+
+            var L1_waw = prompt("Podaj pierwsza liczbe A: ","");
+            var L2_waw = prompt("Podaj druga liczbe B: ","");
+
+            var a = parseInt(L1_waw^3);
+            var b = parseInt(L2_waw^3);
+
+            var v = a^3 + (3 * a^2 * b) + (3 * a * b^2) + b^3;
+            var d = "" + L1_waw + "^3 + (3 * " + L1_waw + "^2 + " + L2_waw + ") + (3 * " + L1_waw + " + " + L2_waw + "^2) + " + L2_waw + "^3"; 
+
+            document.write("" + d + "<br>Wynik:" + v);
+            
+        </script>
+    </div>
+    
+</body>
+</html>
