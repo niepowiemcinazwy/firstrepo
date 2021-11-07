@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 8</title>
+</head>
+<body>
+
+    <div style="color:green;font-size:52px;">
+        <script language="JavaScript">
+
+            var D1_waw = prompt("Pierwszy dzien: ","");
+            var D2_waw = prompt("Drugi dzien: ","");
+            
+            if(D1_waw <= 31 && D1_waw >= 1) {
+                var value = (D1_waw - D2_waw)*24*60*60;
+                document.write("Pomiedzy pierwszym dniem a drugim minelo <u>" + Math.abs(value) + "<u> sekund<br><br>" + "Pierwsza liczba " + D1_waw + "<br>Druga liczba " + D2_waw);
+            }
+            else 
+                document.write("Pierwszy dzien powinna byc wiekszy niz 1 i nie wiekszy niz 31");
+        </script>
+    </div>
+    
+</body>
+</html>

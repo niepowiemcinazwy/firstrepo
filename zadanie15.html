@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 15</title>
+</head>
+<body>
+
+    <div style="color:blue;font-size:55px;">
+
+        <script language="JavaScript">
+
+            var x1_waw = prompt("Liczba X1: ","");
+            var x2_waw = prompt("Liczba X2: ","");
+            var L = prompt("Podaj ilosc liter Twojego imienia: ","");
+
+            document.write("Wczytane liczby, które podałeś: ");
+            document.write("<br>");
+            document.write("Liczba x1: <b>" + x1_waw + "</b>");
+            document.write("<br>");
+            document.write("Liczba x2: <b>" + x2_waw + "</b>");
+            document.write("<br>");
+            document.write("<br>");
+
+            var y = 3 * Math.pow(x1_waw, L / (L+2));
+            var y1 = 2 * Math.cos(x1_waw) + 2 * Math.sin(x1_waw);
+            var y2 = Math.pow(Math.pow(x1_waw,5) + 2 * Math.pow(x2_waw,4),1/3)*(x1_waw - x2_waw);
+
+            document.write("<b>Y</b> = 3 * x1 ^ (Liczba liter Twojego imienia/Liczba liter Twojego imienia + 2) = " + y);
+            document.write("<br>");
+            document.write("<b>Y1</b> = 2 * cosx1 + 2 * sinx1= " + y1);
+            document.write("<br>");
+            document.write("<b>Y2</b> = pierwiastek 3 stopnia z ((x1) ^ 5 + * (x2) ^ 4) * |x1 - x2|= " + y2);
+
+        </script>
+
+    </div>
+
+</body>
+</html>
